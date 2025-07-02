@@ -5,5 +5,10 @@ puts "Matching pattern $s2 in $s1";
 
 if { [string match "*@*.com" $s1] } {
      puts "match found"
-} 
-else { puts "match not found" }
+} else { puts "match not found" }
+
+puts "Matching pattern \"tcl\" in $s1";
+
+if { [string match {tcl} $s1] } {
+     puts "match found"
+} else { puts "match not found" }
