@@ -13,4 +13,6 @@ while { [gets $file_handle line] >= 0 } {
 
     set line [lreplace $line 3 3  $volts]
     set line [lreplace $line 4 4 $current]
+
+    puts $line
 }
